@@ -22,7 +22,7 @@ namespace RRHHApi.Controllers
                 {
                     FirstName = d.Employees.FIRST_NAME,
                     LastName = d.Employees.LAST_NAME,
-                    DepartmentId = d.Employees.DEPARTMENT_ID,
+                    DepartmentId = (int)d.Employees.DEPARTMENT_ID,
                 }
             );
             return results.ToList();
