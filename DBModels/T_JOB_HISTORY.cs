@@ -13,7 +13,7 @@ public partial class T_JOB_HISTORY
 
     public string JOB_ID { get; set; } = null!;
 
-    public byte? DEPARTMENT_ID { get; set; }
+    public int? DEPARTMENT_ID { get; set; }
 
     public virtual T_DEPARTMENTS? DEPARTMENT { get; set; }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace RRHHApi.DBModels;
 
@@ -10,13 +11,14 @@ public partial class T_DEPARTMENTS
     {
         T_EMPLOYEES = new HashSet<T_EMPLOYEES>();
     }
-    public byte DEPARTMENT_ID { get; set; }
+    [Key]
+    public int DEPARTMENT_ID { get; set; }
 
     public string DEPARTMENT_NAME { get; set; } = null!;
 
     public int? MANAGER_ID { get; set; }
 
-    public byte? LOCATION_ID { get; set; }
+    public int? LOCATION_ID { get; set; }
 
     public virtual T_LOCATIONS? LOCATION { get; set; }
 

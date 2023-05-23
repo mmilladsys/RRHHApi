@@ -113,3 +113,7 @@ D:\Archivo\Archivos\Trabajo\Api\RRHHApi\obj\Debug\net7.0\refint\RRHHApi.dll
 D:\Archivo\Archivos\Trabajo\Api\RRHHApi\obj\Debug\net7.0\RRHHApi.pdb
 D:\Archivo\Archivos\Trabajo\Api\RRHHApi\obj\Debug\net7.0\RRHHApi.genruntimeconfig.cache
 D:\Archivo\Archivos\Trabajo\Api\RRHHApi\obj\Debug\net7.0\ref\RRHHApi.dll
+D:\Archivo\Archivos\Trabajo\Api\RRHHApi\bin\Debug\net7.0\System.Net.Http.Formatting.dll
+D:\Archivo\Archivos\Trabajo\Api\RRHHApi\bin\Debug\net7.0\System.Web.Http.dll
+D:\Archivo\Archivos\Trabajo\Api\RRHHApi\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Archivo\Archivos\Trabajo\Api\RRHHApi\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll

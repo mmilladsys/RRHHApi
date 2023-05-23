@@ -5,7 +5,7 @@ namespace RRHHApi.DBModels;
 
 public partial class T_LOCATIONS
 {
-    public byte LOCATION_ID { get; set; }
+    public int LOCATION_ID { get; set; }
 
     public string? STREET_ADDRESS { get; set; }
 

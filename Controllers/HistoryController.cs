@@ -11,7 +11,7 @@ namespace RRHHApi.Controllers
         private readonly DBConnection _db = new DBConnection();
 
 
-        [HttpGet(Name = "GetHistoryJobs")]
+        [HttpGet(Name = "GetHistory")]
 
         public async Task<List<Jobs_History>> HistoryEmployees(string employeeName, DateTime dateTo)
         {
@@ -42,10 +42,10 @@ namespace RRHHApi.Controllers
                                   (jobHistory.END_DATE <= dateTo)
                             select new Jobs_History
                             {
-                                startDate = jobHistory.START_DATE,
-                                endDate = jobHistory.END_DATE,
+                                StartDate = jobHistory.START_DATE,
+                                EndDate = jobHistory.END_DATE,
                                 //jobTitle = jobs.JOB_TITLE  //Join redundante
-                                jobTitle = jobHistory.JOB.JOB_TITLE
+                                JobTitle = jobHistory.JOB.JOB_TITLE
                             };
 
             return resultSet.ToList();

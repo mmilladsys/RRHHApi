@@ -25,7 +25,7 @@ public partial class T_EMPLOYEES
 
     public int? MANAGER_ID { get; set; }
 
-    public byte? DEPARTMENT_ID { get; set; }
+    public int? DEPARTMENT_ID { get; set; }
 
     public virtual T_DEPARTMENTS DEPARTMENT { get; set; }
 

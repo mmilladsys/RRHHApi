@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RRHHApi.DBModels;
 using RRHHApi.Models;
 
 namespace RRHHApi.Controllers
@@ -16,7 +17,7 @@ namespace RRHHApi.Controllers
         private readonly DBConnection _db = new DBConnection();
 
         [HttpGet(Name = "GetDepartments")]
-        public async Task<ActionResult> GetUsers()
+        public async Task<ActionResult> GetDepartments()
         {
             var DeparmentEmployees = _db.T_EMPLOYEES.Select(j => new Employee
             {
@@ -35,5 +36,26 @@ namespace RRHHApi.Controllers
             }).ToList();
             return Ok(Departments);
         }
+
+        [HttpPost(Name = "PostDepartment")]
+
+        public dynamic DepPost(string nameP, int managerP, int locationP) 
+        {
+            try
+            {
+                T_DEPARTMENTS Departamento = new T_DEPARTMENTS
+                {
+                    DEPARTMENT_NAME = nameP,
+                    MANAGER_ID = managerP,
+                    LOCATION_ID = locationP
+                };
+                _db.T_DEPARTMENTS.Add(Departamento);
+                _db.SaveChanges();
+                return Ok();
+            } catch (Exception e) {
+                return e;
+            }
+        }
+
     }
 }

@@ -2,11 +2,11 @@
 {
     public class Jobs_History
     { 
-        public DateTime startDate { get; set; }
+        public DateTime StartDate { get; set; }
 
-        public DateTime endDate { get; set; }
+        public DateTime EndDate { get; set; }
 
-        public string jobTitle { get; set; } = null!;
+        public string JobTitle { get; set; } = null!;
 
     }
 }
