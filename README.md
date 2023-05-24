@@ -23,7 +23,7 @@ Permite obtener el historial de trabajo de cada empleado durante su estadía en 
 ![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/acd12af6-fc0e-461e-bb71-dff4d1f7903d)<br>
 ![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/e88daac0-0d19-4990-8120-13c4412c42ad)
 ## [GET] /JobHistory
-Permite obtener nombre e email del primer trabajador (historicamente) registrado en el historial de trabajo de la empresa.
+Permite obtener nombre e email del primer trabajador (historicamente) registrado en el historial de trabajo de la empresa.<br>
 ![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/786e4718-3e05-487a-9cac-92706131cafe)<br>
 Comprobación: <br>
 ![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/6f2ac3b5-dc48-4e30-8660-eaa5b6249782)
