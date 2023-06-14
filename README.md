@@ -14,6 +14,7 @@ Permite insertar un departamento nuevo de la empresa en la tabla.<br>
 Permite obtener la información de todos los empleados que trabajan en la empresa.
 ![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/9c2fb4ba-17f0-426f-81ca-cdd2380d4475)
 ## [GET] /Programmers
+(Ahora precisa de autenticación para poder ser utilizado)<br>
 Permite obtener la información de todos los empleados "programadores" de la empresa.<br>
 ![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/7989219e-4cff-4f8c-8a4e-852ff3addbd6)<br>
 Comprobación: <br>
@@ -23,8 +24,15 @@ Permite obtener el historial de trabajo de cada empleado durante su estadía en 
 ![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/acd12af6-fc0e-461e-bb71-dff4d1f7903d)<br>
 ![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/e88daac0-0d19-4990-8120-13c4412c42ad)
 ## [GET] /JobHistory
+(Ahora precisa de autenticación para poder ser utilizado)<br>
 Permite obtener nombre e email del primer trabajador (historicamente) registrado en el historial de trabajo de la empresa.<br>
 ![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/786e4718-3e05-487a-9cac-92706131cafe)<br>
 Comprobación: <br>
-![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/6f2ac3b5-dc48-4e30-8660-eaa5b6249782)
+![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/6f2ac3b5-dc48-4e30-8660-eaa5b6249782) <br>
+## [POST] /Login
+Permite obtener un token de autenticación ingresando un usuario y contraseña válidos. <br>
+![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/a4890ab3-565c-4d14-85da-f7a1bf1f6a8b) <br>
+![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/feac658f-85de-45f7-8522-e462574dc8d9) <br>
+![image](https://github.com/mmilladsys/RRHHApi/assets/134303570/241bbd31-0dc2-47b8-8fc6-e77ccd4d13e9)
+
 
