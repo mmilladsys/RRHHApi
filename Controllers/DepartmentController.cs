@@ -12,7 +12,7 @@ namespace RRHHApi.Controllers
         public class Grouped
         {
             public int Id { get; set; }
-            public List<Employee> EmployeeL { get; set; }
+            public List<Employee>? EmployeeL { get; set; }
         }
         private readonly DBConnection _db = new DBConnection();
 

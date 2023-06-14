@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using RRHHApi.DBModels;
 using RRHHApi.Models;
@@ -20,7 +22,7 @@ namespace RRHHApi.Controllers
         private readonly DBConnection _db = new DBConnection();
 
         [HttpGet(Name = "GetJobsHistory")]
-
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "admin")]
         public EmployeeFirst? FirstEmployed()
         {
             return _db.T_JOB_HISTORY.OrderBy(j => j.START_DATE).Select(f => new EmployeeFirst

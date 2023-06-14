@@ -27,7 +27,7 @@ public partial class T_EMPLOYEES
 
     public int? DEPARTMENT_ID { get; set; }
 
-    public virtual T_DEPARTMENTS DEPARTMENT { get; set; }
+    public virtual T_DEPARTMENTS? DEPARTMENT { get; set; }
 
     public virtual ICollection<T_EMPLOYEES> InverseMANAGER { get; set; } = new List<T_EMPLOYEES>();
 

@@ -30,6 +30,7 @@ public partial class DBConnection : DbContext
 
     public virtual DbSet<T_REGIONS> T_REGIONS { get; set; }
 
+    public virtual DbSet<T_USERS> T_USERS { get; set; }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
         => optionsBuilder.UseOracle("DATA SOURCE=localhost:1521/xe;PASSWORD=matiymilla;USER ID=system;");
@@ -195,6 +196,26 @@ public partial class DBConnection : DbContext
             entity.Property(e => e.REGION_ID).HasColumnType("NUMBER");
             entity.Property(e => e.REGION_NAME)
                 .HasMaxLength(25)
+                .IsUnicode(false);
+        });
+        modelBuilder.Entity<T_USERS>(entity =>
+        {
+            entity.HasNoKey();
+
+            entity.Property(e => e.ID_USER)
+                .HasPrecision(5)
+                .ValueGeneratedOnAdd();
+            entity.Property(e => e.PASSWORD)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.ROLE)
+                .HasMaxLength(20)
+                .IsUnicode(false);
+            entity.Property(e => e.USER_MAIL)
+                .HasMaxLength(30)
+                .IsUnicode(false);
+            entity.Property(e => e.USER_NAME)
+                .HasMaxLength(30)
                 .IsUnicode(false);
         });
         modelBuilder.HasSequence("DEPARTMENTS_SEQ").IncrementsBy(10);
