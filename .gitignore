@@ -2,3 +2,5 @@
 .vscode
 bin
 obj
+/id_rsa2
+/id_rsa2.pub
